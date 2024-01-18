@@ -1,0 +1,4 @@
+git add .
+git remote add origin https://github.com/penhele/website-pertama.git
+git commit -m "First commit"
+git push -u origin main

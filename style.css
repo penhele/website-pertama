@@ -4,25 +4,23 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.logo:hover{
-    color: blue;
-}
-
 .navigasi {
-    
     background-color: #9c3737;
     width: 100%;
     /* height: 70px; */
     color: white;
+    display: inline-block;
     padding-bottom: 25px;
 }
 
 .logo {
     float: left;
-    padding-top: 20px;
-    padding-bottom: 10px;
     padding-left: 30px;
-    ;
+    padding-top: 20px;
+}
+
+.logo:hover{
+    color: yellow;
 }
 
 .menu {
@@ -41,4 +39,56 @@
 .menu ul li a {
     text-decoration: none;
     color: white;
+}
+
+.jadwal table {
+    align-content: center;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    font-size: 2vw;
+}
+
+table, tr, th, td {
+    border: 0px solid;
+}
+
+.kolom p {
+    font-size: 32px;
+    margin: 20px;
+    font-family: 'comic sans ms';
+    color: #9c3737;
+}
+
+.tengah {
+    text-align: center;
+    width: 100%;
+}
+
+.pengurus-pelayan-list {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.kartu-pengurus-pelayan {
+    width: 20%;
+    margin: 0 auto;
+}
+
+.kartu-pengurus-pelayan img {
+    width: 80%;
+    border-radius: 20px;
+}
+
+.kartu-pengurus-pelayan p {
+    font-family: 'comic sans ms';
+    font-weight: 800px;
+    font-size: 2.2vw;
+    text-align: center;
+    color: #9c3737;
 }
