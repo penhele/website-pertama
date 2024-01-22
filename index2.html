@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <nav>
+        <div class="left">
+            <img src="Assets/teruna.png" alt="">
+        </div>
+        <div class="right">
+            <a href="">HOME</a>
+        </div>
+    </nav>
+    <div class="slides">
+        <div class="slide">
+            <img src="Assets2/14.3.jpg" alt="">
+        </div>
+        <div class="slide">
+            <img src="Assets2/21.3.jpg" alt="">
+        </div>
+        <div class="slide">
+            <img src="Assets2/10.3.jpeg" alt="">
+        </div>
+        <div class="slide">
+            <img src="Assets2/26.4.jpeg" alt="">
+        </div>
+        <div class="slide">
+            <img src="Assets2/5.1.jpeg" alt="">
+        </div>
+        <div class="navigation">
+            <a href="" class="prev" onclick="plusSlides(-1)">&#10094</a>
+            <a href="" class="next" onclick="plusSlides(-1)">&#10095</a>
+        </div>
+    </div>
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+    
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+    
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("slide"); // perbaikan nama variabel
+            if (n > slides.length) {
+                slideIndex = 1;
+            } 
+            if (n < 1) {
+                slideIndex = slides.length;
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex-1].style.display = "block";
+        }
+    </script>
+    
+</body>
+</html>
